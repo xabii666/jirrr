@@ -1,0 +1,17 @@
+#pragma once
+
+#include "logo.h"
+#include "draw_icon.h"
+#include "draw_icon_new.h"
+#include "draw_icon_new_v2.h"
+#include "play_icon.h"
+#include "play_icon_new.h"
+#include "q_icon.h"
+#include "q_icon_new.h"
+#include "user_icon.h"
+#include "user_icon_new.h"
+#include "play_on.h"
+#include "play_off.h"
+#include "clipboard_approve.h"
+#include "tele_logo.h"
+#include "extra_icon_new.h"
