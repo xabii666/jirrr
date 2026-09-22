@@ -57,7 +57,7 @@ static string formatTimestamp(int64_t ts) {
     return string(buffer);
 }
 
-static bool DEBUG_BYPASS_LOGIN = false; // Set to true to test menu without firebase login
+static bool DEBUG_BYPASS_LOGIN = true; // Set to true to test menu without firebase login
 
 static const int CLIENT_VERSION = 1; // Current version of this APK/library
 static bool g_UpdateRequired = false;
@@ -2756,7 +2756,7 @@ INLINE void DrawLogin(ImGuiIO& io) {
 
 
 INLINE void SetupImgui() {
-    CheckAppUpdate();
+   // CheckAppUpdate();
     PACKAGE_NAME = string(getcmdline());
 
     ImGui::CreateContext();
@@ -2979,7 +2979,7 @@ DEFINES(EGLBoolean, Draw, EGLDisplay dpy, EGLSurface surface) {
 
     if (!is_segv_handler_active()) setup_global_segv_handler();
     if (g_UpdateRequired) {
-        DrawUpdateRequired(io);
+   //     DrawUpdateRequired(io);
         static bool lastState = true;
         bool currentState = true;
         if (currentState != lastState) {
